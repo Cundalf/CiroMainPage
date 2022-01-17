@@ -1,0 +1,42 @@
+{{> header }}
+{{> navbar }}
+<main class="container">
+    <!-- Búsqueda Google -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form method=GET action="http://www.google.com/search">
+
+                <div class="row">
+                    <div class="col col-md-2 text-right">
+                        <a href="http://www.google.com/">
+                            <img id="google-logo" src="/assets/img/google.png" border="0" alt="Google"
+                                align="absmiddle">
+                        </a>
+                    </div>
+                    <div class="col-md-8">
+                        <input class="form-control form-control-lg" type="text" name="q" maxlength=255 value=""
+                            placeholder="Michis">
+                        <input type="hidden" name="hl" value="es">
+                    </div>
+                    <div class="col col-md-2">
+                        <button type="submit" name="btnG" class="btn btn-primary btn-lg">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Búsqueda Google -->
+
+    <hr>
+
+    <h3 class="text-center">Foto diaria de Ciro</h3>
+
+    <div id="daily" class="card">
+        <a href="/photo?photo={{ daily.image }}"><img class="card-img-top" src="/assets/img/ciro/{{ daily.image }}"></a>
+        <div class="card-body">
+            <p class="card-text text-center">{{ daily.title }}</p>
+        </div>
+    </div>
+</main>
+
+{{> footer }}
