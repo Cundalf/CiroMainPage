@@ -56,8 +56,6 @@ class Server {
             let img = req.query.photo;
             let photo = this.ciroController.getPhoto(img);
             
-            console.log(req.query);
-            
             if(photo === undefined) {
                 res.redirect('/404');
                 return;
