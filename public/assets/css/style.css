@@ -1,29 +1,49 @@
+:root {
+  --main-bg-color: #151515;
+  --ciro-primary-color: #052c65;
+}
+
 body {
-  background-color: #000;
+  background-color: var(--main-bg-color);
   color: #fff;
   font-size: 18px;
 }
 
+.bg-ciro-primary {
+  background-color: var(--ciro-primary-color);
+}
+
 .card {
-  background-color: #000000;
+  background-color: var(--main-bg-color);
   border: 0;
 }
 
+.card-anim {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-anim:hover {
+  box-shadow: 0px 0px 5px 0px rgb(5, 44, 101);
+}
+
 .form-control {
-  background-color: #000;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 
 .form-control:focus {
   color: #fff;
-  background-color: #000;
+  background-color: var(--main-bg-color);
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
 footer {
-  background-color: #212529;
+  background-color: var(--ciro-primary-color);
   color: #fff;
   width: 100%;
   text-align: center;
@@ -55,6 +75,16 @@ main {
 
 .logoSection {
   text-align: right;
+}
+
+.btn-primary {
+  background-color: #052c65;
+  border-color: #052c65;
+}
+
+.btn-primary:hover {
+  background-color: #031633;
+  border-color: #031633;
 }
 
 @media (min-width: 992px) {
