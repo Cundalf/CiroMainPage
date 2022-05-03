@@ -1,13 +1,13 @@
 {
     "name": "ciromainpage",
     "version": "1.0.0",
-    "description": "",
+    "description": "Main Page utilizada en mis servidores personales",
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
         "dev": "nodemon server.js"
     },
-    "author": "",
+    "author": "Agustin 'Cundalf' Cundari",
     "license": "ISC",
     "dependencies": {
         "dotenv": "^13.0.1",
